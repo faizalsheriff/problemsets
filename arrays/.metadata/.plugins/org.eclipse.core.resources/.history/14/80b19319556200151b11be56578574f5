@@ -1,0 +1,20 @@
+package test;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import easy.FindDuplicatesSolution;
+
+public class EasyTestCase {
+
+	@Test
+	
+	public void testContainsDuplicate() {
+		int[] testData = {1,2,3,4};
+		new FindDuplicatesSolution().containsDuplicate(testData);
+		
+		
+	}
+
+}

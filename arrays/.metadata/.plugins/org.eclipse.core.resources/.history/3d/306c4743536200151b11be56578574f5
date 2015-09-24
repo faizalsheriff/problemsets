@@ -1,0 +1,29 @@
+package easy;
+
+import java.util.Arrays;
+
+public class FindDuplicatesSolution {
+	
+	public boolean containsDuplicate(int[] nums) {
+        if(nums == null || nums.length == 0)
+        return false;
+        
+        //sort array
+        Arrays.sort(nums);
+        
+        int prevValue = 0;
+        
+        for(int i =0; i < nums.length; i++){
+            if(i == 0){
+                prevValue = nums[i];
+                continue;
+            }else{
+                if(prevValue == nums[i])
+                return true;
+            }
+            
+        }
+        return false;
+    }
+
+}
